@@ -1,0 +1,1 @@
+{%= namespace %} = Ember.Namespace.create();

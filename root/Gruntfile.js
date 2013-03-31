@@ -88,6 +88,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // custom tasks
+  grunt.registerTask('hint', ['jshint']);
   grunt.registerTask('test', ['concat', 'qunit']);
   grunt.registerTask('default', ['clean', 'jshint', 'concat', 'test', 'strip', 'uglify']);
 

@@ -87,8 +87,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task.
-  grunt.registerTask('test', ['qunit']);
+  // custom tasks
+  grunt.registerTask('test', ['concat', 'qunit']);
   grunt.registerTask('default', ['clean', 'jshint', 'concat', 'test', 'strip', 'uglify']);
 
   grunt.registerMultiTask('strip', "Strip all Ember debug statements", function() {

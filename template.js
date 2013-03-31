@@ -22,6 +22,7 @@ exports.template = function(grunt, init, done) {
 
   init.process({}, [
     init.prompt('name'),
+    init.prompt('description'),
     {
       name: 'ember_data',
       message: 'Will this library be for Ember-Data?',
@@ -53,6 +54,7 @@ exports.template = function(grunt, init, done) {
       'grunt-contrib-uglify': '~0.1.1',
       'grunt-contrib-watch': '~0.2.0',
       'grunt-contrib-clean': '~0.4.0',
+      'falafel': '~0.2.1'
     };
 
     // Find the first `preferred` item existing in `arr`.

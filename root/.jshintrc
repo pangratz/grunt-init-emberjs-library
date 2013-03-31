@@ -18,6 +18,7 @@
   "globals": {
     "Ember": true,
     "Em": true,
+    "DS": {%= ember_data %},
     "{%= namespace %}": true,
 
     "module": true,
